@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+    Hello {{fname}} {{lname}},
+    Thank you for applying to be a {{role}}. 
+    I can see that your minimum salary requirement is {{ "${:.2f}".format(salary|float) }}.   
+{% endblock %}

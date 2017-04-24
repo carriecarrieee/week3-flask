@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../static/styles.css" />
+</head>
+<body>
+    <div class="container">
+    <h1>Application Form</h1>
+    <div class=intro>
+    <h4>This is an application form for a job in tech. Please fill out the information below and click "Submit" by 9pm on Sunday, April 23.</h4>
+    </div><br>
+    <form action="/application-response" method="POST">
+        <div class="form-group"
+                <p><label for="firstname">First Name: </label>
+        <input class="field" type="text" name="firstname" placeholder="First Name"></p>
+
+        <p><label for="lastname">Last Name: </label>
+        <input style="font-weight: bold;" class="field" type="text" name="lastname" placeholder="Last Name"></p>
+
+        <p><label for="salary">Salary Requirement: </label>
+        <input class="field" type="number" min="1" name="salary" placeholder="Salary Requirement"></p>
+
+        <div class="dropdown">    
+            <p><label for="role">Please select your role: </label>
+            <select class="field" name="role">
+                <option value="sfe">Software Engineer</option>
+                <option value="qa">QA Engineer</option>
+                <option value="pm">Product Manager</option>
+            </select></p>
+        </div>
+
+        <p><input class="field" type="submit"></p>
+        </div>
+    </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
